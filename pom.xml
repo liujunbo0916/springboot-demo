@@ -23,6 +23,7 @@
 		<jackson.mapper.version>1.9.4</jackson.mapper.version>
 		<jackson.core.version>2.7.5</jackson.core.version>
 		<springboot.mybatis.version>1.1.1</springboot.mybatis.version>
+        <codehaus.groovy.version>2.4.4</codehaus.groovy.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -106,6 +107,12 @@
 			<artifactId>commons-beanutils</artifactId>
 			<version>${apache.commons-beanutils.version}</version>
 		</dependency>
+        <!-- 项目增加对groovy的支持-->
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>${codehaus.groovy.version}</version>
+        </dependency>
 	</dependencies>
 	<build>
 		<plugins>
