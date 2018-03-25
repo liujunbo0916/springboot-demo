@@ -19,7 +19,6 @@ import java.lang.reflect.Method;
 @Configuration
 @EnableCaching
 public class RedisConfig {
-
     @Bean
     public KeyGenerator keyGenerator(){
 
@@ -43,6 +42,7 @@ public class RedisConfig {
      */
     @Bean
     public CacheManager cacheManager(RedisConnectionFactory connectionFactory) {
+        System.out.println("connectionFactory = [" + connectionFactory + "]");
         return RedisCacheManager.create(connectionFactory);
     }
     /**

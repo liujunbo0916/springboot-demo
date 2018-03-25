@@ -3,7 +3,7 @@ package com.liujunbo.springbootdemo.groovy
 class CalGroovyService {
 
     def static mpSort(){
-        def sortAry = [23,43,1,22,67,2,6]
+        def sortAry = [32,43,1,22,67,2,6]
 
         for (def i = 0; i <sortAry.size() ; i++) {
 
